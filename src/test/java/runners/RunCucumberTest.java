@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(strict=true, plugin= {
-		"pretty"}, features="src/test/resources/feature_files/algo.feature", glue="classpath:steps_definition")
+		"pretty"}, features="src/test/resources/feature_files/login.feature", glue="classpath:steps_definition")
 public class RunCucumberTest {
 
 }

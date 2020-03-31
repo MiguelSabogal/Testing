@@ -13,4 +13,11 @@ public class Browser {
 		WebDriverManager.chromedriver().setup();
 		return new ChromeDriver();
 	}
+	
+	public void getURL(WebDriver driver,String url) {
+		driver.get(url);
+	}
+	
+	
+	
 }
