@@ -14,9 +14,15 @@ public class Browser {
 		return new ChromeDriver();
 	}
 	
-	public void getURL(WebDriver driver,String url) {
+	public void openWebPage(WebDriver driver,String url) {
 		driver.get(url);
 	}
+	public void maximizeWindow(WebDriver driver) {
+		driver.manage().window().maximize();
+	}
+	
+	
+	
 	
 	
 	
