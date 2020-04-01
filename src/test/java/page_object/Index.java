@@ -9,8 +9,12 @@ public class Index {
 		this.driver = driver;
 	}
 	
-	
-	
-	
-
+	public boolean checkIndexPage() {
+		if(driver.getCurrentUrl().equalsIgnoreCase("https://twitter.com/home")) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
 }

@@ -1,15 +1,19 @@
 package steps_definition;
 
+import static org.junit.Assert.fail;
+
 import org.openqa.selenium.WebDriver;
 
 import io.cucumber.java8.*;
 import page_object.Browser;
 import page_object.Explore;
+import page_object.Index;
 
 public class LoginSteps implements En {
 	Browser browser;
 	Explore explore;
 	WebDriver driver;
+	Index index;
 	
 	public LoginSteps() {
 		
@@ -18,12 +22,11 @@ public class LoginSteps implements En {
 			driver =browser.open();
 			browser.openWebPage(driver, url);
 			browser.maximizeWindow(driver);
-			
+			browser.waitPageLoaded(driver);	
 		});
-		explore = new Explore(driver);
 		
 		When("I enter {string} in the user field",(String user)->{
-			explore.waitUserName();
+			explore = new Explore(driver);
 			explore.fillUserName(user);
 			
 		});
@@ -33,11 +36,18 @@ public class LoginSteps implements En {
 		});
 		
 		When("I press the login button",()->{
+			explore.clickLoginButton();
+			browser.waitPageLoaded(driver);
 			
 		});
 		
 		Then("I see the index page",()->{
-			
+			index = new Index(driver);
+			if(!index.checkIndexPage()) {
+				browser.closeDriver(driver);
+				fail();
+			}
+			browser.closeDriver(driver);
 			
 		});
 		

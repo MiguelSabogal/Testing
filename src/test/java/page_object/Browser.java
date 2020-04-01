@@ -1,5 +1,7 @@
 package page_object;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -21,7 +23,13 @@ public class Browser {
 		driver.manage().window().maximize();
 	}
 	
+	public void waitPageLoaded(WebDriver driver) {
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
+	}
 	
+	public void closeDriver(WebDriver driver) {
+		driver.close();
+	}
 	
 	
 	
