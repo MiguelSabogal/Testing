@@ -21,7 +21,10 @@ public class LoginSteps implements En {
 			twitterMainPage.navigateToTwitter();});
 		
 		When("I want to log into Twitter with username {string} and password {string}", (String username, String password) -> {
-			twitterMainPage.logInWithUsernameAndPassword(username,password);
+			twitterMainPage.clicOnSignInButton();
+			twitterMainPage.enterUsername(username);
+			twitterMainPage.enterPassword(password);
+			twitterMainPage.loginWithButton();
 		});
 		
 		Then("I validate the successful login into Twitter",() ->{

@@ -30,13 +30,25 @@ public class TwitterMainPage{
 		
 	}
 
-	public void logInWithUsernameAndPassword(String username, String password) {
+	public void clicOnSignInButton() {
 		WebElement btnLogin = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(BTN_LOGIN)));
 		btnLogin.click();
+		
+	}
+	
+	public void enterUsername(String username) {
 		WebElement edtUsuario = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(EDT_USER)));
 		edtUsuario.sendKeys(username);
+		
+	}
+	
+	public void enterPassword(String password) {
 		WebElement edtPassword = this.base.driver.findElement(By.name(EDT_PASSWORD));
 		edtPassword.sendKeys(password);
+		
+	}
+	
+	public void loginWithButton() {
 		WebElement btnLogin2 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(BTN_LOGIN2)));
 		btnLogin2.click();
 		
@@ -50,6 +62,12 @@ public class TwitterMainPage{
 			return false;
 		}	
 	}
+
+
+
+
+
+
 	
 	
 }
