@@ -6,12 +6,22 @@ import org.openqa.selenium.WebDriver;
 
 import io.cucumber.java8.*;
 import page_object.Browser;
-import page_object.Explore;
+import page_object.Login;
 import page_object.Index;
+
+/*
+ * 
+ * Created by: Sebastian Calvo
+ * Date: 31/03/2020
+ * Modified by:
+ * Description: Class where the steps to login are written 
+*/
+
+
 
 public class LoginSteps implements En {
 	Browser browser;
-	Explore explore;
+	Login explore;
 	WebDriver driver;
 	Index index;
 	
@@ -26,7 +36,7 @@ public class LoginSteps implements En {
 		});
 		
 		When("I enter {string} in the user field",(String user)->{
-			explore = new Explore(driver);
+			explore = new Login(driver);
 			explore.fillUserName(user);
 			
 		});
