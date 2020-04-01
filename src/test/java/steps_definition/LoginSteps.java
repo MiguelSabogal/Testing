@@ -7,7 +7,7 @@ import Utilidades.BaseUtil;
 import io.cucumber.java8.*;
 import page_object.TwitterMainPage;
 
-public class LoginSteps extends BaseUtil implements En {
+public class LoginSteps implements En {
 
 	private BaseUtil base;
 	

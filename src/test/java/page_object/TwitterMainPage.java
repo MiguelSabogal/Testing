@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import Utilidades.BaseUtil;
 
-public class TwitterMainPage extends BaseUtil{
+public class TwitterMainPage{
 
 	private BaseUtil base;
 	private static WebDriverWait wait;

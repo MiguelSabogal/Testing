@@ -8,7 +8,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.After;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Hooks extends BaseUtil{
+public class Hooks{
 
 	private BaseUtil base;
 	private ChromeOptions options;
