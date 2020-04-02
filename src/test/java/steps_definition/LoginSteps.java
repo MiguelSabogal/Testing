@@ -1,15 +1,14 @@
 package steps_definition;
 
 import io.cucumber.java8.*;
-import page_object.Browser;
+import page_object.Login;
 
 public class LoginSteps implements En {
-	Browser browser;
+	Login login;
 	
 	public LoginSteps() {
-		Given("I want to open Twitter in a browser", ()->{
-			browser = new Browser();
-			browser.open();
+		Given("I want to create an account on Twitter", () -> {
+			login.signIn();
 		});
 	}
 }
