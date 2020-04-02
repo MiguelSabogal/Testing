@@ -26,5 +26,10 @@ public class LoginPage {
 	public void fillPass(String userPass) {
 		driver.findElement(By.name("session[password]")).sendKeys(userPass);
 	}
+	
+	public void clickButton() {
+		driver.findElement(By.xpath("//*[@id=\"react-root\"]/div/div/div[2]/main/div/div/form/div/div[3]/div/div")).click();
+	}
+	
 
 }

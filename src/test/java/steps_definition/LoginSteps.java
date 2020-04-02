@@ -10,13 +10,15 @@ public class LoginSteps implements En {
 	public LoginSteps(LoginPage login) {
 		Given("I want to open Twitter in a browser", () -> {
 			login.openPage();
-			Thread.sleep(5000);
+			Thread.sleep(1000);
 		});
 		
-		When("I want to write <user> <password>", ( String user, String password) -> {
-		  login.fillUser(user);
-		  login.fillPass(password);
+		When("I want to write {user} {password}", (String user, String password) -> {
+			  login.fillUser(user);
+			  login.fillPass(password);
+			  login.clickButton();
 		});
+
 
 	}
 }
