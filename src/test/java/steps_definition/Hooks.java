@@ -23,6 +23,7 @@ public class Hooks{
 		this.options = new ChromeOptions();
 		options.addArguments("start-maximized");
 		this.base.driver = new ChromeDriver(options);	
+		this.base.driver.manage().window().maximize();
 	}
 	
 	@After

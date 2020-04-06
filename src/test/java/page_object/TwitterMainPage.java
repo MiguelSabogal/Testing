@@ -12,7 +12,7 @@ public class TwitterMainPage{
 	private BaseUtil base;
 	private static WebDriverWait wait;
 	//-----------------Object Mapping---------------//
-	private final String BTN_LOGIN = "//span[contains(text(),'Iniciar sesión')]"; 
+	private final String BTN_LOGIN = "(//span[contains(text(),'Log in')])[1]"; 
 	private final String EDT_USER = "session[username_or_email]";
 	private final String EDT_PASSWORD = "session[password]";
 	private final String BTN_LOGIN2 = "div[class$='r-bcqeeo r-q4m81j r-qvutc0']";
