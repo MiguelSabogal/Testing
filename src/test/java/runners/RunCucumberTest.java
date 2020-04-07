@@ -6,8 +6,12 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(strict=true, plugin= {
-		"pretty"}, features="src/test/resources/feature_files/algo.feature", glue="classpath:steps_definition")
+@CucumberOptions(strict=true, 
+	plugin= {"pretty"}, 
+	features= {"src/test/resources/feature_files/login.feature"},
+	glue= {"classpath:steps_definition"},
+	tags = "success"
+	)
 public class RunCucumberTest {
 
 }
