@@ -17,7 +17,7 @@ public class LoginSteps implements En {
 		Given ("I want to open Twitter in a browser", ()->{
 			browser = new Browser();
 			webDriver = browser.open();
-			webDriver.get("https://www.twitter.com");
+			webDriver.get("https://www.twitter.com/login");
 		});
 
 		When("Write user {string}", (String usuario) -> {
