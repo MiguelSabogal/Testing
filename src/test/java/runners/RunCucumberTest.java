@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 	plugin= {"pretty"}, 
 	features= {"src/test/resources/feature_files/login.feature"},
 	glue= {"classpath:steps_definition"},
-	tags = "success"
+	tags = "@error"
 	)
 public class RunCucumberTest {
 
