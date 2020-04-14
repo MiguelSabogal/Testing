@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Login Feature for Voice" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-13T19:17:01" hostname="dcardenas-mbp" time="10.35">
+  <properties/>
+  <testcase name="successful login into voice" classname="Login Feature for Voice" time="10.35"/>
+  <system-out><![CDATA[
+@login_feature @successful_login
+Scenario: successful login into voice                                              # src/test/resources/features/login/login.feature:5
+  Given that I navigate to voice main page                                         # voice.prove.concept.step_definitions.StepDefinitions.<init>(StepDefinitions.java:11)
+  When i logged into voice with username 'testuser11' and passsword 'b1password11' # voice.prove.concept.step_definitions.StepDefinitions.<init>(StepDefinitions.java:15)
+  Then i should be directed to voice home page                                     # voice.prove.concept.step_definitions.StepDefinitions.<init>(StepDefinitions.java:21)
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/dcardenasg/.m2/repository/webdriver/chromedriver/mac64/80.0.3987.106/chromedriver
+Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 6990
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1586805422.353][WARNING]: FromSockAddr failed on netmask
+[1586805423.289][WARNING]: This version of ChromeDriver has not been tested with Chrome version 81.
+Apr 13, 2020 2:17:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1586805424.410][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805424.580][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805424.681][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805424.783][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805424.884][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805424.985][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805425.085][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805425.187][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805425.288][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805425.611][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805425.713][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805426.039][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805426.141][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805426.243][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805426.344][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805426.445][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805426.546][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805426.648][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805426.750][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805426.851][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805426.953][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805427.054][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805427.156][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805427.257][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805427.359][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805427.460][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805427.562][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805427.663][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805427.765][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805427.866][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805427.967][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805428.068][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805428.170][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805428.271][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805428.372][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805428.474][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805428.576][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586805428.691][SEVERE]: Timed out receiving message from renderer: 0.100
+]]></system-err>
+</testsuite>

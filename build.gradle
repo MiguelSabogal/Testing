@@ -1,0 +1,25 @@
+ plugins {
+    id 'java'
+}
+
+group 'voice.prove.concept'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.13'
+    testCompile group: 'io.cucumber', name: 'cucumber-java8', version: '5.5.0'
+    testCompile group: 'io.cucumber', name: 'cucumber-junit', version: '5.3.0'
+    testCompile group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '3.8.1'
+    testCompile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+    testCompile group: 'io.cucumber', name: 'cucumber-picocontainer', version: '5.5.0'
+    testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.30'
+    testCompile group: 'de.monochromata.cucumber', name: 'reporting-plugin', version: '4.0.40'
+    testCompile group: 'javax.inject', name: 'javax.inject', version: '1'
+
+}
